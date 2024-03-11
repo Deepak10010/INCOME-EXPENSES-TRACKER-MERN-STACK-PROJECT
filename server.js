@@ -35,7 +35,7 @@ app.get('/api/v1/users/profile/:id',async(req,res)=>{
     } catch (error) {
         res.json(error);
     }
-});
+});     
 
 
 //DELETE/api/v1/users/:id
