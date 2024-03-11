@@ -81,6 +81,16 @@ app.get('/api/v1/accounts/:id',async(req,res)=>{
 });
 
 
+//GET/api/v1/accounts
+app.get('/api/v1/accounts',async(req,res)=>{
+    try {
+        res.json({msg:'Get All Accounts route'});
+    } catch (error) {
+        res.json(error);
+    }
+});
+
+
 //DELETE/api/v1/accounts/:id
 app.delete('/api/v1/accounts/:id',async(req,res)=>{
     try {
@@ -125,6 +135,15 @@ app.get('/api/v1/transactions/:id',async(req,res)=>{
     }
 });
 
+
+//GET/api/v1/transactions
+app.get('/api/v1/transactions',async(req,res)=>{
+    try {
+        res.json({msg:'Get All transaction route'});
+    } catch (error) {
+        res.json(error);
+    }
+});
 
 //DELETE/api/v1/transactions/:id
 app.delete('/api/v1/transactions/:id',async(req,res)=>{
