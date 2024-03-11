@@ -21,7 +21,7 @@ app.post('/api/v1/users/register',async(req,res)=>{
 //POST/api/v1/users/login
 app.post('/api/v1/users/login',async(req,res)=>{
     try {
-        res.json({msg:'Login route'});
+        res.json({msg:'Login route'});  
     } catch (error) {
         res.json(error);
     }
